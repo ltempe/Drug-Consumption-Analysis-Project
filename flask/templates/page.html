@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home page</title>
+	</head>
+	<body>
+		<h1>Drug consumption prediction</h1>
+		<p>Please complete all the features to know which drug are you consuming</p>
+		
+		<form class="form-inline" method="POST" action="{{ url_for('test') }}">
+			<label for="Age-select">Age :</label>
+			<select name="Age" id="Age-select">
+				<option value="-0.95197">18-24</option>
+				<option value="-0.07854">25-34</option>
+				<option value="0.49788">35-44</option>
+				<option value="1.09449">45-54</option>
+				<option value="1.82213">55-64</option>
+				<option value="2.59171">65+</option>
+			</select>
+			<br/>
+
+			<label for="Gender-select">Gender :</label>
+			<select name="Gender" id="Gender-select">
+				<option value="-0.48246">Male</option>
+				<option value="0.48246">Female</option>
+			</select>
+			<br/>
+
+			<label for="Education-select">Education :</label>
+			<select name="Education" id="Education-select">
+				<option value="-2.43591">Left school before 16 years</option>
+				<option value="-1.73790">Left school at 16 years</option>
+				<option value="-1.43719">Left school at 17 years</option>
+				<option value="-1.22751">Left school at 18 years</option>
+				<option value="-0.61113">Some college or university, no certificate or degree</option>
+				<option value="-0.05921">Professional certificate/ diploma</option>
+				<option value="0.45468">University degree</option>
+				<option value="1.16365">Masters degree</option>
+				<option value="1.98437">Doctorate degree</option>
+			</select>
+			<br/>
+
+			<label for="Country-select">Country :</label>
+			<select name="Country" id="Country-select">
+				<option value="0.96082">UK</option>
+				<option value="0.24923">Canada</option>
+				<option value="-0.57009">USA</option>
+				<option value="-0.28519">Other</option>
+				<option value="-0.09765">Australia</option>
+				<option value="0.21128">Republic of Ireland</option>
+				<option value="-0.46841">New Zealand</option>
+			</select>
+			<br/>
+
+			<label for="Ethnicity-select">Ethnicity :</label>
+			<select name="Ethnicity" id="Ethnicity-select">
+				<option value="0.12600">Mixed-White/Asian</option>
+				<option value="-0.31685">White</option>
+				<option value="0.11440">Other</option>
+				<option value="-0.22166">Mixed-White/Black</option>
+				<option value="-0.50212">Asian</option>
+				<option value="-1.10702">Black</option>
+				<option value="1.90725">Mixed-Black/Asian</option>
+			</select>
+			<br/>
+			
+			<br/>
+			<p>Please note your personality level for each feature.</p>
+			<p>For example, give the score you imagine you have between 0 (absolutely not impulsive) 
+			to 9 (extremely impulsive) you think you have for "Impulsiveness".</p>
+			<br/>
+			
+			<label for="Neuroticism-select">Level of Neuroticism between 0 and 48 :</label>
+			<select name="Neuroticism" id="Neuroticism-select">
+				<option value="-3.46436">0</option>
+				<option value="-3.15735">1</option>
+				<option value="-2.75696">2</option>
+				<option value="-2.52197">3</option>
+				<option value="-2.42317">4</option>
+				<option value="-2.3436">5</option>
+				<option value="-2.21844">6</option>
+				<option value="-2.05048">7</option>
+				<option value="-1.86962">8</option>
+				<option value="-1.69163">9</option>
+				<option value="-1.55078">10</option>
+				<option value="-1.43907">11</option>
+				<option value="-1.32828">12</option>
+				<option value="-1.1943">13</option>
+				<option value="-1.05308">14</option>
+				<option value="-0.92104">15</option>
+				<option value="-0.79151">16</option>
+				<option value="-0.67825">17</option>
+				<option value="-0.58016">18</option>
+				<option value="-0.46725">19</option>
+				<option value="-0.34799">20</option>
+				<option value="-0.24649">21</option>
+				<option value="-0.14882">22</option>
+				<option value="-0.05188">23</option>
+				<option value="0.04257">24</option>
+				<option value="0.13606">25</option>
+				<option value="0.22393">26</option>
+				<option value="0.31287">27</option>
+				<option value="0.41667">28</option>
+				<option value="0.52135">29</option>
+				<option value="0.62967">30</option>
+				<option value="0.73545">31</option>
+				<option value="0.82562">32</option>
+				<option value="0.91093">33</option>
+				<option value="1.02119">34</option>
+				<option value="1.13281">35</option>
+				<option value="1.23461">36</option>
+				<option value="1.37297">37</option>
+				<option value="1.49158">38</option>
+				<option value="1.60383">39</option>
+				<option value="1.72012">40</option>
+				<option value="1.8399">41</option>
+				<option value="1.98437">42</option>
+				<option value="2.127">43</option>
+				<option value="2.28554">44</option>
+				<option value="2.46262">45</option>
+				<option value="2.61139">46</option>
+				<option value="2.82196">47</option>
+				<option value="3.27393">48</option>
+			</select>
+			<br/>
+
+			<label for="Extraversion-select">Level of Extraversion between 0 and 41 :</label>
+			<select name="Extraversion" id="Extraversion-select">
+				<option value="-3.27393">0</option>
+				<option value="-3.00537">1</option>
+				<option value="-2.72827">2</option>
+				<option value="-2.5383">3</option>
+				<option value="-2.44904">4</option>
+				<option value="-2.32338">5</option>
+				<option value="-2.21069">6</option>
+				<option value="-2.11437">7</option>
+				<option value="-2.03972">8</option>
+				<option value="-1.92173">9</option>
+				<option value="-1.7625">10</option>
+				<option value="-1.6334">11</option>
+				<option value="-1.50796">12</option>
+				<option value="-1.37639">13</option>
+				<option value="-1.23177">14</option>
+				<option value="-1.09207">15</option>
+				<option value="-0.94779">16</option>
+				<option value="-0.80615">17</option>
+				<option value="-0.69509">18</option>
+				<option value="-0.57545">19</option>
+				<option value="-0.43999">20</option>
+				<option value="-0.30033">21</option>
+				<option value="-0.15487">22</option>
+				<option value="0.00332">23</option>
+				<option value="0.16767">24</option>
+				<option value="0.32197">25</option>
+				<option value="0.47617">26</option>
+				<option value="0.63779">27</option>
+				<option value="0.80523">28</option>
+				<option value="0.96248">29</option>
+				<option value="1.11406">30</option>
+				<option value="1.2861">31</option>
+				<option value="1.45421">32</option>
+				<option value="1.58487">33</option>
+				<option value="1.74091">34</option>
+				<option value="1.93886">35</option>
+				<option value="2.127">36</option>
+				<option value="2.32338">37</option>
+				<option value="2.57309">38</option>
+				<option value="2.8595">39</option>
+				<option value="3.00537">40</option>
+				<option value="3.27393">41</option>
+			</select>
+			<br/>
+
+			<label for="Openness to experience-select">Level of Openness to experience between 0 and 34 :</label>
+			<select name="Openness to experience" id="Openness to experience-select">
+				<option value="-3.27393">0</option>
+				<option value="-2.8595">1</option>
+				<option value="-2.63199">2</option>
+				<option value="-2.39883">3</option>
+				<option value="-2.21069">4</option>
+				<option value="-2.09015">5</option>
+				<option value="-1.97495">6</option>
+				<option value="-1.82919">7</option>
+				<option value="-1.68062">8</option>
+				<option value="-1.55521">9</option>
+				<option value="-1.42424">10</option>
+				<option value="-1.27553">11</option>
+				<option value="-1.11902">12</option>
+				<option value="-0.97631">13</option>
+				<option value="-0.84732">14</option>
+				<option value="-0.71727">15</option>
+				<option value="-0.58331">16</option>
+				<option value="-0.45174">17</option>
+				<option value="-0.31776">18</option>
+				<option value="-0.17779">19</option>
+				<option value="-0.01928">20</option>
+				<option value="0.14143">21</option>
+				<option value="0.29338">22</option>
+				<option value="0.44585">23</option>
+				<option value="0.58331">24</option>
+				<option value="0.7233">25</option>
+				<option value="0.88309">26</option>
+				<option value="1.06238">27</option>
+				<option value="1.24033">28</option>
+				<option value="1.43533">29</option>
+				<option value="1.65653">30</option>
+				<option value="1.88511">31</option>
+				<option value="2.15324">32</option>
+				<option value="2.44904">33</option>
+				<option value="2.90161">34</option>
+			</select>
+			<br/>
+
+			<label for="Agreeableness-select">Level of Agreeableness between 0 and 40 :</label>
+			<select name="Agreeableness" id="Agreeableness-select">
+				<option value="-3.46436">0</option>
+				<option value="-3.15735">1</option>
+				<option value="-3.00537">2</option>
+				<option value="-2.90161">3</option>
+				<option value="-2.78793">4</option>
+				<option value="-2.70172">5</option>
+				<option value="-2.5383">6</option>
+				<option value="-2.35413">7</option>
+				<option value="-2.21844">8</option>
+				<option value="-2.07848">9</option>
+				<option value="-1.92595">10</option>
+				<option value="-1.772">11</option>
+				<option value="-1.6209">12</option>
+				<option value="-1.47955">13</option>
+				<option value="-1.34289">14</option>
+				<option value="-1.21213">15</option>
+				<option value="-1.07533">16</option>
+				<option value="-0.91699">17</option>
+				<option value="-0.76096">18</option>
+				<option value="-0.60633">19</option>
+				<option value="-0.45321">20</option>
+				<option value="-0.30172">21</option>
+				<option value="-0.15487">22</option>
+				<option value="-0.01729">23</option>
+				<option value="0.13136">24</option>
+				<option value="0.28783">25</option>
+				<option value="0.43852">26</option>
+				<option value="0.59042">27</option>
+				<option value="0.76096">28</option>
+				<option value="0.94156">29</option>
+				<option value="1.11406">30</option>
+				<option value="1.2861">31</option>
+				<option value="1.45039">32</option>
+				<option value="1.61108">33</option>
+				<option value="1.81866">34</option>
+				<option value="2.03972">35</option>
+				<option value="2.23427">36</option>
+				<option value="2.46262">37</option>
+				<option value="2.75696">38</option>
+				<option value="3.15735">39</option>
+				<option value="3.46436">40</option>
+			</select>
+			<br/>
+
+			<label for="Conscientiousness-select">Level of Conscientiousness between 0 and 40 :</label>
+			<select name="Conscientiousness" id="Conscientiousness-select">
+				<option value="-3.46436">0</option>
+				<option value="-3.15735">1</option>
+				<option value="-2.90161">2</option>
+				<option value="-2.72827">3</option>
+				<option value="-2.57309">4</option>
+				<option value="-2.42317">5</option>
+				<option value="-2.30408">6</option>
+				<option value="-2.18109">7</option>
+				<option value="-2.04506">8</option>
+				<option value="-1.92173">9</option>
+				<option value="-1.78169">10</option>
+				<option value="-1.64101">11</option>
+				<option value="-1.5184">12</option>
+				<option value="-1.38502">13</option>
+				<option value="-1.25773">14</option>
+				<option value="-1.13788">15</option>
+				<option value="-1.0145">16</option>
+				<option value="-0.89891">17</option>
+				<option value="-0.78155">18</option>
+				<option value="-0.65253">19</option>
+				<option value="-0.52745">20</option>
+				<option value="-0.40581">21</option>
+				<option value="-0.27607">22</option>
+				<option value="-0.14277">23</option>
+				<option value="-0.00665">24</option>
+				<option value="0.12331">25</option>
+				<option value="0.25953">26</option>
+				<option value="0.41594">27</option>
+				<option value="0.58489">28</option>
+				<option value="0.7583">29</option>
+				<option value="0.93949">30</option>
+				<option value="1.13407">31</option>
+				<option value="1.30612">32</option>
+				<option value="1.46191">33</option>
+				<option value="1.63088">34</option>
+				<option value="1.81175">35</option>
+				<option value="2.04506">36</option>
+				<option value="2.33337">37</option>
+				<option value="2.63199">38</option>
+				<option value="3.00537">39</option>
+				<option value="3.46436">40</option>
+			</select>
+			<br/>
+
+			<label for="Impulsiveness-select">Level of Impulsiveness between 0 and 9 :</label>
+			<select name="Impulsiveness" id="Impulsiveness-select">
+				<option value="-2.55524">0</option>
+				<option value="-1.37983">1</option>
+				<option value="-0.71126">2</option>
+				<option value="-0.21712">3</option>
+				<option value="0.19268">4</option>
+				<option value="0.52975">5</option>
+				<option value="0.88113">6</option>
+				<option value="1.29221">7</option>
+				<option value="1.86203">8</option>
+				<option value="2.90161">9</option>
+			</select>
+			<br/>
+
+			<label for="Sensation seeking-select">Level of Sensation seeking between 0 and 10 :</label>
+			<select name="Sensation seeking" id="Sensation seeking-select">
+				<option value="-2.07848">0</option>
+				<option value="-1.54858">1</option>
+				<option value="-1.18084">2</option>
+				<option value="-0.84637">3</option>
+				<option value="-0.52593">4</option>
+				<option value="-0.21575">5</option>
+				<option value="0.07987">6</option>
+				<option value="0.40148">7</option>
+				<option value="0.7654">8</option>
+				<option value="1.2247">9</option>
+				<option value="1.92173">10</option>
+			</select>
+			<br/>
+			
+			<button type="submit" class="btn-default">Submit</button>
+		</form>
+	</body>
+</html>
