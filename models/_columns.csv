@@ -1,18 +1,18 @@
-Alcohol consumption,0.9640243632336656,Education,Sensation seeking,Extraversion,Country,Ethnicity,Impulsiveness
-Amphetamines consumption,0.7222015503875969,Country,Sensation seeking,Impulsiveness,Age,Conscientiousness,Gender
-Amyl nitrite consumption,0.8054640088593578,Sensation seeking,Gender,Impulsiveness,Conscientiousness,Age,Agreeableness
-Benzodiazepine consumption,0.7041904761904761,Country,Neuroticism,Sensation seeking,Impulsiveness,Conscientiousness,Openness to experience
-Caffeine consumption,0.9800132890365448,Ethnicity,Extraversion,Sensation seeking,Impulsiveness,Age,Education
-Cannabis consumption,0.8067995570321151,Country,Sensation seeking,Age,Openness to experience,Impulsiveness,Gender
+Alcohol consumption,0.9640243632336656,Education,Sensation seeking,Extraversion,Country,Impulsiveness,Age
+Amphetamines consumption,0.7321771871539313,Country,Sensation seeking,Impulsiveness,Age,Conscientiousness,Gender
+Amyl nitrite consumption,0.8041306755260245,Sensation seeking,Gender,Impulsiveness,Conscientiousness,Age,Agreeableness
+Benzodiazepine consumption,0.7135193798449613,Country,Neuroticism,Sensation seeking,Impulsiveness,Conscientiousness,Openness to experience
+Caffeine consumption,0.9800132890365448,Extraversion,Sensation seeking,Impulsiveness,Age,Education,Conscientiousness
+Cannabis consumption,0.8134640088593578,Country,Sensation seeking,Age,Openness to experience,Impulsiveness,Gender
 Chocolate consumption,0.9820132890365448,Country,Gender,Age,Sensation seeking,Agreeableness,Education
-Cocaine consumption,0.7015304540420819,Sensation seeking,Country,Impulsiveness,Age,Agreeableness,Conscientiousness
-Crack consumption,0.9000664451827243,Country,Sensation seeking,Impulsiveness,Gender,Education,Conscientiousness
-Ecstasy consumption,0.7448394241417498,Sensation seeking,Age,Country,Openness to experience,Impulsiveness,Gender
-Heroin consumption,0.8907419712070876,Country,Sensation seeking,Impulsiveness,Neuroticism,Agreeableness,Conscientiousness
-Ketamine consumption,0.8174595791805095,Sensation seeking,Age,Gender,Openness to experience,Impulsiveness,Conscientiousness
-Legal highs consumption,0.8088062015503876,Country,Age,Sensation seeking,Gender,Openness to experience,Impulsiveness
-Lysergic acid diethylamide consumption,0.7974595791805094,Country,Openness to experience,Sensation seeking,Age,Gender,Impulsiveness
-Methadone consumption,0.802797342192691,Country,Sensation seeking,Age,Conscientiousness,Neuroticism,Impulsiveness
-Magic mushrooms consumption,0.7814728682170543,Country,Sensation seeking,Openness to experience,Age,Gender,Impulsiveness
-Nicotine consumption,0.731499446290144,Sensation seeking,Country,Age,Impulsiveness,Education,Conscientiousness
-Volatile substance abuse consumption,0.8794152823920266,Country,Sensation seeking,Age,Impulsiveness,Conscientiousness,Openness to experience
+Cocaine consumption,0.696874861572536,Sensation seeking,Country,Impulsiveness,Age,Agreeableness,Conscientiousness
+Crack consumption,0.9013953488372094,Country,Sensation seeking,Impulsiveness,Gender,Education,Conscientiousness
+Ecstasy consumption,0.7401550387596899,Sensation seeking,Age,Country,Openness to experience,Impulsiveness,Gender
+Heroin consumption,0.8907397563676632,Country,Sensation seeking,Impulsiveness,Neuroticism,Agreeableness,Conscientiousness
+Ketamine consumption,0.8154573643410853,Sensation seeking,Age,Gender,Openness to experience,Impulsiveness,Conscientiousness
+Legal highs consumption,0.7874750830564784,Country,Age,Sensation seeking,Gender,Openness to experience,Impulsiveness
+Lysergic acid diethylamide consumption,0.8134617940199336,Country,Openness to experience,Sensation seeking,Age,Gender,Impulsiveness
+Methadone consumption,0.8041328903654484,Country,Sensation seeking,Age,Conscientiousness,Neuroticism,Impulsiveness
+Magic mushrooms consumption,0.779483942414175,Country,Sensation seeking,Openness to experience,Age,Gender,Impulsiveness
+Nicotine consumption,0.7321594684385382,Sensation seeking,Country,Age,Impulsiveness,Education,Conscientiousness
+Volatile substance abuse consumption,0.8827508305647841,Country,Sensation seeking,Age,Impulsiveness,Conscientiousness,Openness to experience

@@ -7,7 +7,7 @@
 		<h1>Drug consumption prediction</h1>
 		<p>Please complete all the features to know which drug are you consuming</p>
 		
-		<form class="form-inline" method="POST" action="{{ url_for('test') }}">
+		<form class="form-inline" method="POST" action="{{ url_for('results') }}">
 			<label for="Age-select">Age :</label>
 			<select name="Age" id="Age-select">
 				<option value="-0.95197">18-24</option>
