@@ -4,16 +4,6 @@ import pandas as pd
 import pickle
 import sklearn
 
-from sklearn.model_selection import train_test_split, cross_val_score, GridSearchCV
-from sklearn.metrics import accuracy_score, confusion_matrix
-from sklearn.preprocessing import StandardScaler
-
-from sklearn.svm import SVC
-from sklearn.ensemble import BaggingClassifier, GradientBoostingClassifier, RandomForestClassifier
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.naive_bayes import GaussianNB
-from sklearn.linear_model import LogisticRegression, RidgeClassifier
-
 app = Flask(__name__)
 
 @app.route('/')
