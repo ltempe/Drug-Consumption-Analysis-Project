@@ -8,7 +8,6 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    print(dir(sklearn.neighbors))
     return render_template('page.html')
 
 @app.route("/results" , methods=['POST'])
